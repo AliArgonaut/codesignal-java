@@ -2,12 +2,10 @@ class Solution {
     public static void main(String[] args) {
         String missionName = "Sort";
 
-        // TODO: Print the original first and last character of the mission name
+        System.out.println(missionName.charAt(0));
+        System.out.println(missionName.charAt(missionName.length() - 1));
 
-        System.out.println(missionName[0]);
-
-        // TODO: Create a new string with the first letter as 'P' and last letter as 'k'
-
-        // TODO: Print the updated mission name
+        String newMission = "P" + missionName.substring(1, missionName.length() - 1) + "k";
+        System.out.println(newMission);
     }
 }
